@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto Mono',monospace;
+}
+
+#titulo {
+  color:purple;
+  text-align:left;
+}
+
+.label {
+  color: red;
+}
