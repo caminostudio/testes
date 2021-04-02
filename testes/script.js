@@ -15,6 +15,7 @@ document.getElementById ("botao").onclick = responder;
   document.getElementById("parametroEditors").innerHTML = parametroEditors;
   var parametrosPathname = window.location.pathname.split('/');
   document.getElementById("parametroPathname").innerHTML = parametrosPathname;
+  document.getElementById("variavel").innerHTML = localStorage.getItem('variavelGravada');
 
 // Função responder
 function responder () {
@@ -30,4 +31,32 @@ function responder () {
   entrada.value = null;
   titulo.style.color = "#ff0000";
   pergunta.style.visibility = "hidden";
+}
+
+// Função "Ir para Google"
+function irGoogle() {
+  window.location.assign("https://www.google.com/")
+}
+
+// Evento clique no botão "Ir para Camino"
+document.getElementById ("irCamino").onclick = irCamino;
+
+function irCamino() {
+  window.location.assign("https://www.camino.com.br/")
+}
+
+// Evento clique no botão "Gravar" variável
+document.getElementById ("gravar").onclick = gravarVariavel;
+
+function gravarVariavel() {
+  localStorage.setItem('variavelGravada', 'Olá');
+  document.getElementById("variavel").innerHTML = localStorage.getItem('variavelGravada');
+};
+
+// Evento clique no botão "Remover" variável
+document.getElementById ("remover").onclick = removerVariavel;
+
+function removerVariavel() {
+  localStorage.removeItem('variavelGravada');
+  document.getElementById("variavel").innerHTML = localStorage.getItem('variavelGravada');
 }

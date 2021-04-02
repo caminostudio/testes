@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR" >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Testes</title>
-  <script  src="./script.js"></script><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<html>
 <body>
   <h1 id = titulo>Testes</h1>
   <label>URL: </label>
@@ -18,9 +16,16 @@
   <label>Parâmetros da lista "pathname": </label>
   <label id="parametroPathname"></label>
   <h2 id = pergunta>Qual a idade do Leo?</h2>
-  <input id = "entrada" type = "text" placeholder = "Insira a idade"</input>
+  <input id = "entrada" type = "text" placeholder = "Insira a idade"></input>
   <button id = "botao">Responder</button>
   <p id = "resposta"><p>
-  <script  src="./script.js"></script>
-  </body>
+  <button onclick="this.innerHTML = Date()">Clique para ver a data</button><br>
+  <button onclick="irGoogle()">Ir para Google</button><br>
+  <button id="irCamino">Ir para Camino</button><br>
+  <label>Variável armazenada: </label>
+  <label id="variavel"></label>
+  <button id="gravar">Gravar</button>
+  <button id="remover">Remover</button>
+  <script src="./script.js"></script>
+</body>
 </html>
