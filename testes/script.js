@@ -60,5 +60,3 @@ function removerVariavel() {
   localStorage.removeItem('variavelGravada');
   document.getElementById("variavel").innerHTML = localStorage.getItem('variavelGravada');
 }
-
-
